@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Hack Me</title>
+
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        overflow: hidden;
+      }
+    </style>
+
+    <script>
+    </script>
+  </head>
+
+  <body>
+
+    <p>Hack me?? Log?</p>
+
+</body>
+
+<script type="text/javascript">
+	console.log("Hello cheese foo");
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "Hacm Me",
+  "description": "Web app template",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "The Gaia Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Hackme",
+      "description": "Web app template"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "128": "/style/icons/Blank.png"
+  },
+  "permissions": {
+    "geolocation":{}
+  },
+  "activities": {
+    "share": {
+      "filters": {
+        "type": "image/*"
+       },          
+      "disposition": "inline",
+      "returnValue": false
+    }    
+  }
+}
