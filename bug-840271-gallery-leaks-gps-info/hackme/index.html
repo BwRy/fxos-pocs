@@ -14,55 +14,19 @@
         overflow: hidden;
       }
     </style>
-
-    <script>
-    </script>
   </head>
 
   <body>
 
-    <p>Meow</p>
-
     <center>
+      <p>Prr Upload</p>
       <p><img id="button" src="kitten.jpg"/></p>
+      <p><a id="link">This is a link</a></p>
     </center>
 
 </body>
 
 <script type="text/javascript" src="jquery-1.9.1.js"></script>
-<script type="text/javascript">
-  console.log("Hello this is hackme");
-
-  var button = document.querySelector("#button");
-  if (button) {
-    button.onclick = function () {
-    };
-  }
-
-  var foo = navigator.geolocation.watchPosition(function() {}, function() {}, {});
-
-  navigator.mozSetMessageHandler("activity", function (activityRequest) {
-    console.log("PRRR This is our activity handler");
-    if (activityRequest.source.name === 'share') {
-      var data = activityRequest.source.data;
-      var blobs = data.blobs, filenames = data.filenames;
-      blobs.forEach(function(blob, index) {
-        console.log("Sending result to server");
-        var fd = new FormData();
-        fd.append('name', 'photo');
-        fd.append('file', blob);
-        $.ajax({
-          type: 'POST',
-          url: 'http://192.168.0.64:8080/upload',
-          data: fd,
-          processData: false,
-          contentType: false
-        }).done(function(data) {
-          console.log(data);
-        });
-      });
-    }
-  });
-</script>
+<script type="text/javascript" src="index.js"></script>
 
 </html>
